@@ -4,8 +4,8 @@ export function WhoWeAreImage() {
   return (
     <div className="relative w-full h-full min-h-[500px] lg:min-h-[600px] rounded-2xl overflow-hidden bg-muted/20 border border-border/50 shadow-lg">
       <Image
-        src="/poker.jpg"
-        alt="Poker table with chips, dice, and playing cards"
+        src="/images/landing/gallery/g-6.webp"
+        alt="Who We Are - House 52 Poker Club"
         fill
         className="object-cover"
         sizes="(max-width: 1024px) 100vw, 50vw"

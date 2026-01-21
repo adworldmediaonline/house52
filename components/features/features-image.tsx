@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-export function AboutImage() {
+export function FeaturesImage() {
   return (
-    <div className="relative w-full h-full min-h-[600px] lg:min-h-[700px] rounded-2xl overflow-hidden bg-muted/20 border border-border/50 shadow-lg">
+    <div className="relative w-full h-full min-h-[400px] rounded-2xl overflow-hidden bg-muted/20 border border-border/50 shadow-lg">
       <Image
-        src="/images/about-us-1.webp"
-        alt="About House 52 Poker Club"
+        src="/images/landing/gallery/g-3.webp"
+        alt="House 52 Poker Club features"
         fill
         className="object-cover"
-        sizes="(max-width: 1024px) 100vw, 50vw"
-        priority
+        sizes="(max-width: 1024px) 100vw, 33vw"
       />
       {/* Decorative overlay elements */}
       <div className="absolute inset-0 pointer-events-none">
