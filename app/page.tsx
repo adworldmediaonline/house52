@@ -1,5 +1,7 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Features } from "@/components/features";
+import { About } from "@/components/about";
 
 export default function Page() {
   return (
@@ -7,6 +9,8 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
+        <Features />
+        <About />
       </main>
     </div>
   );
