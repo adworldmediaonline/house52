@@ -2,12 +2,14 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, XIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavItemComponent } from "./nav-item";
 import { MobileNav } from "./mobile-nav";
 import { navigationItems } from "./navigation-data";
+
+const PHONE_NUMBER = "9998070792";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -37,6 +39,15 @@ export function Header() {
           {navigationItems.map((item) => (
             <NavItemComponent key={item.label} item={item} />
           ))}
+          {/* Phone Number */}
+          <a
+            href={`tel:${PHONE_NUMBER}`}
+            className="flex items-center gap-2 text-base font-medium text-foreground hover:text-primary transition-colors"
+            aria-label="Call us"
+          >
+            <PhoneIcon className="size-4" />
+            <span>{PHONE_NUMBER}</span>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

@@ -98,12 +98,6 @@ export function Footer() {
                 Terms and Conditions
               </Link>
               <Link
-                href="/disclaimer"
-                className="text-base text-muted-foreground hover:text-primary transition-colors w-fit"
-              >
-                Disclaimer
-              </Link>
-              <Link
                 href="/legality"
                 className="text-base text-muted-foreground hover:text-primary transition-colors w-fit"
               >

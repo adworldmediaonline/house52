@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { PhoneIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { NavItem } from "./types";
 
@@ -9,6 +10,8 @@ interface MobileNavProps {
   items: NavItem[];
   onItemClick: () => void;
 }
+
+const PHONE_NUMBER = "9998070792";
 
 export function MobileNav({ items, onItemClick }: MobileNavProps) {
   return (
@@ -57,6 +60,15 @@ export function MobileNav({ items, onItemClick }: MobileNavProps) {
               </Link>
             );
           })}
+          {/* Phone Number */}
+          <a
+            href={`tel:${PHONE_NUMBER}`}
+            className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors mt-2 pt-4 border-t border-border/40"
+            onClick={onItemClick}
+          >
+            <PhoneIcon className="size-4" />
+            <span>{PHONE_NUMBER}</span>
+          </a>
         </div>
       </div>
     </div>
