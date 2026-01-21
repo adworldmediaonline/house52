@@ -15,6 +15,6 @@ export const bookingContent: BookingContent = {
     "Reserve a private poker table at House 52 for your family and friends. Our exclusive Table + Food Packages include delicious snacks and meals, creating the perfect blend of entertainment and hospitality. Whether you're celebrating a special occasion or simply enjoying quality time together, our private tables offer a unique social experience. Gather your loved ones for an evening filled with laughter, strategy, and unforgettable moments around the poker table.",
   cta: {
     label: "Book Now",
-    href: "/booking",
+    href: "/contact",
   },
 };

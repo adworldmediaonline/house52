@@ -21,6 +21,6 @@ export const heroContent: HeroContent = {
     "Our tables welcome players of all skill levels, from newcomers to experienced professionals. Whether you prefer relaxed low-stakes sessions or competitive high-energy games, you'll find the perfect match. Our friendly dealers, welcoming atmosphere, and the excitement of every hand create an unforgettable experience. Join us and discover why House 52 is the premier destination for live poker in the region.",
   cta: {
     label: "Register Now",
-    href: "/register",
+    href: "/contact",
   },
 };
